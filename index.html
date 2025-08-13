@@ -3,37 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Team Kaizen Support</title>
+    <title>Team Kaizen</title>
     <link rel="stylesheet" href="index.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- HEADER -->
-    <header>
-        <div class="logo">Team Kaizen Support</div>
-        <nav>
-            <ul>
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="about.html">Who Are We?</a></li>
-                <li><a href="services.html">What Do We Do</a></li>
-                <li><a href="workshops.html">Workshops</a></li>
-                <li><a href="licensing.html">Licensing</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="events.html">Events</a></li>
-                <li><a href="team.html">Meet the Team</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <!-- HERO SECTION -->
-    <section class="hero">
-        <h1>Empowering Financial Success</h1>
-        <p>Kaizen means continuous improvement — and that’s what we bring to every team we work with.</p>
-        <a href="about.html" class="btn">Learn More</a>
-    </section>
+<!-- ===== HEADER ===== -->
+<header class="site-header">
+    <a href="https://workora.online/" class="logo-container">
+        <img src="assets/kaizen logo.png" alt="Team Kaizen Logo" class="logo-img">
+        <span class="logo-text">Team Kaizen</span>
+    </a>
 
-    <!-- FOOTER -->
-    <footer>
-        <p>© 2025 Team Kaizen Support. All rights reserved.</p>
-    </footer>
+    <nav class="nav-menu" id="navMenu">
+        <a href="https://workora.online/">Home</a>
+        <a href="#who-we-are">Who We Are</a>
+        <a href="#what-we-do">What We Do</a>
+        <a href="#workshops">Workshops</a>
+        <a href="#licensing">Licensing</a>
+        <a href="#blog">Blog</a>
+        <a href="#events">Events</a>
+        <a href="#meet-us">Meet Us</a>
+    </nav>
+
+    <div class="menu-toggle" id="menuToggle">&#9776;</div>
+</header>
+
+<!-- ===== HERO SECTION ===== -->
+<section class="hero">
+    <div class="hero-content">
+        <p class="tagline">Continuous Improvement</p>
+        <h1>Because Your Future Deserves the Best Version of You.</h1>
+        <p class="description">
+            Team Kaizen is a community of dedicated financial educators helping families take control of their future one step at a time. Guided by the Kaizen philosophy of continuous improvement, we provide the tools, knowledge, and support to turn financial goals into lasting success.
+        </p>
+        <a href="#schedule" class="cta-button">Begin Today →</a>
+    </div>
+</section>
+
+<script>
+    // Mobile menu toggle
+    document.getElementById('menuToggle').addEventListener('click', function () {
+        document.getElementById('navMenu').classList.toggle('show');
+    });
+</script>
 </body>
 </html>
