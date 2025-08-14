@@ -1,0 +1,67 @@
+/* Page hero for What We Do */
+.page-hero {
+  background: #f6f5f4;
+  padding: 80px 20px;
+  border-bottom: 1px solid #eee;
+}
+.page-hero__content {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+.page-hero h1 {
+  font-size: 2.4rem;
+  margin-bottom: 12px;
+}
+.page-hero p {
+  max-width: 760px;
+  margin: 0 auto;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* What We Do cards */
+.wwd-section {
+  max-width: 1100px;
+  margin: 50px auto 80px;
+  padding: 0 20px;
+}
+.wwd-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+.wwd-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 28px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+  text-align: center;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.wwd-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.09);
+}
+.wwd-card i {
+  font-size: 28px;
+  color: #09824d;
+  margin-bottom: 12px;
+  display: inline-block;
+}
+.wwd-card h3 {
+  font-size: 1.25rem;
+  color: #0b622c;
+  margin: 8px 0 10px;
+}
+.wwd-card p {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 18px;
+}
+
+/* Reuse your .cta-btn style from index.css for buttons.
+   If you want slightly wider buttons on this page: */
+.wwd-card .cta-btn {
+  min-width: 220px;
+}
